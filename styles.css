@@ -1,6 +1,7 @@
 html {
     font-size: 10px;
     font-family: Montserrat, sans-serif;
+    background-color: rgb(21, 11, 36);
 }
 
 * {
@@ -16,19 +17,24 @@ html {
     justify-content: center;
     background-color: rgb(21, 11, 36);
     max-width: 1920px;
+    margin: 0 auto;
+
+    border: 1px rgb(19, 18, 18) solid;
+
 }
 
 /* header */
 header {
     flex-basis: 100vh;
     overflow: hidden;
+
 }
 
 .headercontainer {
     position: relative;
     background-color: rgb(21, 11, 36);
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 }
 
 .moon {
