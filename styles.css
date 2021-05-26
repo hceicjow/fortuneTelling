@@ -15,6 +15,7 @@ html {
     align-items: stretch;
     justify-content: center;
     background-color: rgb(21, 11, 36);
+    max-width: 1920px;
 }
 
 /* header */
