@@ -224,30 +224,40 @@ h2.companyDesc {
 }
 
 .arrow {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    z-index: 4;
-
     font-size: 40px;
     color: rgb(177, 114, 230);
     cursor: pointer;
     transition: 0.3s;
-    animation: ding 1s 5s linear both;
+    animation: ding 2s 5s ease-in-out alternate 4 both;
     border-radius: 50%;
 }
 
+.scrollArrow {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    z-index: 4;
+    background-color: transparent;
+    border: none;
+    transform: translate(-50%, -50%);
+}
+
 .arrow:hover {
-    background-color: rgb(78, 14, 54);
+    background-color: rgb(21, 11, 36);
+
 }
 
 @keyframes ding {
     0% {
-        transform: translate(-50%, -50%) rotate(0deg);
+        transform: translate(0, 0)
+    }
+
+    50% {
+        transform: translate(0, 50%)
     }
 
     100% {
-        transform: translate(-50%, -50%) rotate(360deg);
+        transform: translate(0, 0)
     }
 }
 
