@@ -25,11 +25,61 @@
             </div>
         </header>
         <main>
+            <div class="about">
+                <h2>Wróżbiarstwo</h3>
+                    <p class="textAbout">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus distinctio
+                        dolorem perferendis. Esse, adipisci perferendis? Reprehenderit omnis error inventore! Adipisci
+                        at
+                        tempore dicta voluptas quae impedit vero dolor cumque repellat?</p>
+                    <p class="textAbout">Jeżeli jesteś zainteresowany poznaniem swojej przyszłosci, koniecznie sprawdz
+                        nasz cennik</p>
+                    <button class="btnPrices">Cennik</button>
+                    <div class="pricesContainer">
+                        <div class="prices">
+                            <p>Pytania do kart</p>
+                            <p>120</p>
+                            <p>Pytania do wahadła (tak / nie)</p>
+                            <p>40</p>
+                            <p>Rozkład miłosny</p>
+                            <p>40</p>
+                            <p>Rozkład miesięczny</p>
+                            <p>50</p>
+                            <p>Rozkład roczny</p>
+                            <p>90</p>
+                            <p>Analiza energetyczna</p>
+                            <p>35</p>
+                            <p>Analiza zdjęć, intencji, choroby</p>
+                            <p>100</p>
+                            <p>Oczyszczanie ogólne</p>
+                            <p>250</p>
+                            <p>Oczyszczanie domu</p>
+                            <p>250</p>
+                            <p>Oczyszczanie czakr</p>
+                            <p>300</p>
+                            <p>Odcinanie od nałogów, bólu, ludzi</p>
+                            <p>240</p>
+                            <p>Zdejmowanie klątw, uroków</p>
+                            <p>190</p>
+                            <p>Odcinanie osób z naszego życia</p>
+                            <p>90</p>
+                            <p>Rytuał świec</p>
+                            <p>190</p>
+                            <p>Odesłanie duszy do świata stwórcy</p>
+                            <p>500</p>
+                            <p>Konsultacja</p>
+                            <p>150</p>
+                            <p>Energia Reiki</p>
+                            <p>50</p>
+                            <p>Kontakt ze zmarłym</p>
+                            <p>50</p>
+                        </div>
+                    </div>
+            </div>
             <div class="contact">
                 <h2>Kontakt</h2>
-                <div class="phoneNumber"><i class="fas fa-phone"></i>: +48 555555555</div>
+                <div class="phoneNumber"><i class="fas fa-phone"></i>+48 555555555</div>
                 <div class="mailAddress">
-                    <i class="far fa-envelope"></i>: genercimail@mailhost.com</div>
+                    <i class="far fa-envelope"></i> genercimail@mailhost.com</div>
                 <h3>Lokalizacja</h3>
                 <div class="map">
                     <div><iframe width="100%" height="400"
@@ -38,47 +88,7 @@
                     </div>
                 </div>
             </div>
-            <div class="pricesContainer">
-                <h2>Cennik</h2>
-                <div class="prices">
-                    <p>Pytania do kart</p>
-                    <p>120</p>
-                    <p>Pytania do wahadła (tak / nie)</p>
-                    <p>40</p>
-                    <p>Rozkład miłosny</p>
-                    <p>40</p>
-                    <p>Rozkład miesięczny</p>
-                    <p>50</p>
-                    <p>Rozkład roczny</p>
-                    <p>90</p>
-                    <p>Analiza energetyczna</p>
-                    <p>35</p>
-                    <p>Analiza zdjęć, intencji, choroby</p>
-                    <p>100</p>
-                    <p>Oczyszczanie ogólne</p>
-                    <p>250</p>
-                    <p>Oczyszczanie domu</p>
-                    <p>250</p>
-                    <p>Oczyszczanie czakr</p>
-                    <p>300</p>
-                    <p>Odcinanie od nałogów, bólu, ludzi</p>
-                    <p>240</p>
-                    <p>Zdejmowanie klątw, uroków</p>
-                    <p>190</p>
-                    <p>Odcinanie osób z naszego życia</p>
-                    <p>90</p>
-                    <p>Rytuał świec</p>
-                    <p>190</p>
-                    <p>Odesłanie duszy do świata stwórcy</p>
-                    <p>500</p>
-                    <p>Konsultacja</p>
-                    <p>150</p>
-                    <p>Energia Reiki</p>
-                    <p>50</p>
-                    <p>Kontakt ze zmarłym</p>
-                    <p>50</p>
-                </div>
-            </div>
+
     </div>
     </div>
     </main>
@@ -91,6 +101,20 @@
                 },
                 'slow');
         });
+        const btnPrices = document.querySelector('.btnPrices');
+        btnPrices.addEventListener('click', function () {
+            const pricesContainer = document.querySelector('.pricesContainer');
+            if (pricesContainer.style.display === 'none') {
+                pricesContainer.style.display = 'block'
+                btnPrices.style.color = '#2f123a'
+                btnPrices.style.backgroundColor = 'white'
+            } else {
+                pricesContainer.style.display = 'none'
+                pricesContainer.style.display = 'none';
+                btnPrices.style.color = 'white';
+                btnPrices.style.backgroundColor = '#2f123a'
+            }
+        })
     </script>
     <script src="https://kit.fontawesome.com/4adf243f14.js" crossorigin="anonymous"></script>
 </body>
