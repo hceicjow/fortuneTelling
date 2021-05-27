@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,100;1,300;1,400&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    /* font-size: 10px; */
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: relative;
+    height: 100vh;
+    background-color: #2f123a;
+    color: white;
+    overflow: hidden;
+}
+
+.headerInfo {
+    position: absolute;
+    bottom: 30vh;
+    height: 25vh;
+    width: 100%;
+    z-index: 1;
+    color: rgb(177, 114, 230);
+    animation: bigger 3s 1s both;
+}
+
+.headerInfo h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 200;
+    margin: 0 1px;
+    padding: 1px;
+}
+
+header button {
+    position: absolute;
+    bottom: 2vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.arrow {
+    font-size: 2.5rem;
+    color: rgb(177, 114, 230);
+    margin: 5px;
+    animation: verticalMovement 2s 5s ease 1;
+}
+
+.rock {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 30vh;
+    width: 100%;
+    background-image: url(./img/header/rock.png);
+    background-position: top;
+    background-size: cover;
+}
+
+.moon {
+    position: absolute;
+    top: 1vh;
+    right: 10vw;
+    height: 20vh;
+    width: auto;
+}
+
+.cloud3 {
+    position: absolute;
+    top: 3vh;
+    left: 32vw;
+    height: 10vh;
+    width: auto;
+}
+
+.witchOnBroom {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    height: 33vh;
+    width: auto;
+    animation: horizontalMovement 5s alternate both linear;
+}
+
+@keyframes horizontalMovement {
+    0% {
+        transform: translate(-120vw, 0);
+    }
+
+    50% {
+        transform: translate(100vw, 0);
+    }
+
+    51% {
+        transform: translate(100vw, 0) scalex(-1);
+    }
+
+    100% {
+        transform: translate(-120vw, 0) scalex(-1);
+    }
+}
+
+@keyframes verticalMovement {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, -50%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bigger {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.contact>div {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.map {
+    box-shadow: 0px 0px 4px 2px #000000;
+    margin-left: 5px;
+}
+
+.map div {
+    position: relative;
+}
+
+h2,
+h3 {
+    margin-left: 10px;
+}
+
+div.pricesContainer {
+    display: none;
+}
+
+div.prices {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+div.prices>* {
+    margin: 2px;
+    /* border-bottom: black solid 1px; */
+
+}
+
+div.prices>*:nth-child(odd) {
+    flex-basis: 80%;
+}
+
+div.prices>*:nth-child(4n) {
+    background-color: #ccc;
+}
+
+div.prices>*:nth-child(4n-1) {
+    background-color: #ccc;
+}
+
+.textAbout {
+    margin: 5px;
+}
+
+.btnPrices {
+    margin: 5px;
+    background-color: #2f123a;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border: none;
+}
+
+.displayBlock {
+    display: block;
+}
