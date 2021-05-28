@@ -36,7 +36,7 @@ header .bgc {
     background-position: center;
     width: 400px;
     height: 300px;
-    animation: appear 1s 0.3s linear both;
+    animation: appear 1s 1s linear both;
     overflow: hidden;
 }
 
@@ -85,7 +85,7 @@ header button {
     background-image: url(./img/header/rock.png);
     background-position: center;
     background-size: cover;
-    animation: appear 1s 0.3s linear both;
+    animation: appear 1s 2s linear both;
 }
 
 .moon {
