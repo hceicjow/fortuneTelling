@@ -4,24 +4,29 @@ html,
 body {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
     background-color: white;
 }
 
 .wrapper {
+    margin: 0 3px;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 header {
-    display: relative;
+    position: relative;
     height: 100vh;
     background-color: #4a2757;
     color: white;
     overflow: hidden;
 }
+
 
 header .bgc {
     position: absolute;
@@ -33,6 +38,7 @@ header .bgc {
     width: 400px;
     height: 300px;
     animation: appear 1s 0.3s linear both;
+    overflow: hidden;
 }
 
 .headerInfo {
@@ -49,13 +55,12 @@ header .bgc {
     text-align: center;
     font-size: 4rem;
     font-weight: 200;
-    margin: 0 1px;
     padding: 1px;
 }
 
 header button {
     position: absolute;
-    bottom: 2vh;
+    bottom: 5vh;
     left: 50%;
     transform: translate(-50%, 0);
     background-color: transparent;
@@ -224,10 +229,6 @@ div.prices>*:nth-child(4n) {
 
 div.prices>*:nth-child(4n-1) {
     background-color: #e7e7e7;
-}
-
-.main div p {
-    margin: 5px;
 }
 
 .btnPrices>button {
